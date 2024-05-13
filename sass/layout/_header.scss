@@ -1,13 +1,30 @@
 .header {
   padding-top: 30px;
+  @media  screen and (min-width:768px) {
+    padding-top: 50px;
+
+  }
+   @media screen  and (min-width: 1440px) {
+     padding-top: 64px;
+  }
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+   @media screen  and (min-width: 1440px) {
+    
+  }
 }
 .logo {
   fill: $add-text-color;
+  width: 100px;
+  height: 12px;
+   @media screen  and (min-width: 1440px) {
+   width: 130px;
+  height: 15px;
+  }
 }
 .header__btn {
   background-color: transparent;
@@ -22,4 +39,20 @@
 
 .header__icon{
   fill: $main-text-color;
+   @media screen  and (min-width: 1440px) {
+   display: none;
+  }
+}
+.nav {
+   @media screen  and (min-width: 1440px) {
+     display: block;
+  }
+}
+.nav__list {
+  display: flex;
+  gap: 73px;
+  align-items: center;
+}
+.nav__item-link {
+  color: $main-text-color;
 }
